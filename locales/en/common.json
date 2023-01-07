@@ -1,0 +1,13 @@
+{
+    "locale": "en",
+    "site_main": "Main page",
+    
+    "page_Blog": "Blog",
+    "page_Pricing": "Pricing",
+    "page_Products": "Products",
+
+    "user_Profile": "Profile", 
+    "user_Account": "Account",
+    "user_Dashboard": "Dashboard",
+    "user_Logout": "Logout"
+}

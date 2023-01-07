@@ -1,0 +1,13 @@
+{
+    "locale": "ua",
+    "site_main": "Головна",
+
+    "page_Blog": "Блог",
+    "page_Pricing": "Ціни",
+    "page_Products": "Продукти",
+
+    "user_Profile": "Профіль", 
+    "user_Account": "Акаунт",
+    "user_Dashboard": "Інструменти",
+    "user_Logout": "Вихід"
+}
