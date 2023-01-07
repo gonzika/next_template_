@@ -1,27 +1,27 @@
-Установка проекта:
+Project installation:
 1. nvm use 16.16.0 & npm i
-2. заполнить файлы env недостающими значениями, 
-3. Скачать ключ сервисного аккаунта гугл https://console.cloud.google.com/iam-admin/serviceaccounts 
-    и вставить свои значения в файл keys/google_key.json
-4. Создать сертификаты с именем certificate.crt и certificate.key, поместить их папку key/. 
-    Установить сертификаты (keys/certificate.crt) в доверенные корневые центры сертификации.
+2. Fill .env files with missing values, 
+3. Download Google service account key https://console.cloud.google.com/iam-admin/serviceaccounts
+     and paste your values into the file keys/google_key.json
+4. Create certificates named certificate.crt and certificate.key, put them in the key/ folder.
+     Install certificates (keys/certificate.crt) to trusted root CAs.
 5. npm run serve  // Run dev server
 
 
 
-Базы данных: (сейчас в проекте используется МонгоДБ, через библиотеку Мангуст)
+Databases: (now the project uses MongoDB, via the Mongoose library)
 npx prisma init --datasource-provider sqlite
 
-Создает и применяет миграцию. Эта команда не поддерживается в MongoDB . Используйте db pushвместо этого.
+Creates and applies a migration. This command is not supported in MongoDB . Use db push instead.
 npx prisma migrate dev
 
-В производственных и тестовых средах используйте migrate deploy команду для применения миграции:
+In production and test environments, use the "migrate deploy" command to apply the migration:
 npx prisma migrate deploy
 
-Для монгодб не делать миграции. Он создает базу данных, если база данных не существует.
+For mongodb don't do migrations. It creates the database if the database doesn't exist.
 npx prisma db push
 
-Запустите Studio на порту по умолчанию и откройте для него новую вкладку браузера.
+Launch Studio on the default port and open a new browser tab for it.
 npx prisma studio
 
-Как подружить монго Атлас с верселем https://www.mongodb.com/docs/atlas/reference/partner-integrations/vercel/
+How to make mongo atlas friends with versel https://www.mongodb.com/docs/atlas/reference/partner-integrations/vercel/
